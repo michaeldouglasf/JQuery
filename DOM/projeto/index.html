@@ -158,8 +158,10 @@
     <script src="/DOM//projeto/jquery-3.6.3.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-     
-
+       
+        $('.cars_list li').click(function () {
+          console.log(`este carro e do ano ${$(this).data('ano')}`);
+        })
       });
     </script>
   </body>
